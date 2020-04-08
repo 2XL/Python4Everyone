@@ -1,0 +1,28 @@
+
+
+
+__init__(self, args)	
+# metodo llamado despues de crear objeto para realizar 
+# tareas de inicializacion
+
+__new__(cls, args)
+# metodo exclusivo de las clases de nuevoestilo que se ejecuta antes que 
+# __init__ y que se encarga de construir i devolver el objeto en si
+# es un metodo estatico independiente de los objetos, es metodo de clase
+# por lo tanto el primer para metro no es self sino cls :: class
+
+__del__(self)
+# metodo llamado cuando el objeto va a ser borrado.
+# tambien llamado destructor, se utiliza para realizar tareas de limpieza
+
+__str__(self)
+# metodo llamado para crear una cadena de texto que represente a nuestro objeto.
+# se utiliza cuando usamos print para mostrar nuestro objeto o cuando
+# usamos la funcion str(obj) para crear una cadena a partir de nuestro objeto
+
+__cmp__(self, otro)
+# metodo llamado cuando se utilizan los operadores de comparacion para comprobar si nuestro objeto es menor maryour o igual al objeto pasado como parametro. debe sevolver un numero negativo si nuestro objeto es menor cero si son iguales y positivo si nuestro es mayor
+# excepcion : si se comprar la igualdad o diferencia se lanzaria excepcion si se comprueba que son el mismo objeto
+
+__len__(self)
+# metodo llamado para comprobar la longitud del objeto. se utiliza por
